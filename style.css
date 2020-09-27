@@ -49,9 +49,12 @@ body {
 ===================*/
 
 .nav {
-    font-size: 13px;
+    font-size: 1rem;
     font-weight: 700;
     text-transform: uppercase;
+    top: 2.4rem;
+    position: fixed;
+    right: 20rem;
 }
 
 .nav__link {
@@ -60,9 +63,27 @@ body {
     text-decoration: none;
     opacity: .75;  
     transition: opacity .1s linear; 
+    font-size: 1rem;
+    
 }
 
 
+.nav__link:hover{
+    color: rgb(255, 102, 0);
+    transition: 0.2s ease-in-out;
+}
+
+#active{
+    padding: 0.3rem 0.8rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    color: #000;
+}
+
+#active:hover{
+    color: rgb(255, 102, 0);
+    transition: 0.2s ease-in-out;
+}
 
 
 /* Intro
@@ -70,7 +91,7 @@ body {
 .intro {
     height: 750px;
     padding-top: 20%;
-    background: #31344e url("intro-bg.jpg") center no-repeat;
+    background: #31344e url("new_intro.jpg") center no-repeat;
     background-size: cover; 
 
 }
@@ -79,7 +100,7 @@ body {
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    background: rgb(255, 255, 255);
+    background: rgb(243, 243, 243);
     /* Выравнивание элементов во Flex контейнере по центру */
     display: flex;   
     flex-direction: row; 
@@ -97,6 +118,7 @@ body {
     font-size: 1rem;
     text-align: left;
     align-items: center;
+    background-color: #fff;
 }
 
 .box{
@@ -106,7 +128,7 @@ body {
 }
 
 .button {
-    background-color: #011141; /* Green */
+    background-color: #011141; 
     border: none;
     color: white;
     padding: 1rem 3rem;
@@ -116,6 +138,11 @@ body {
     font-size: 1rem;
     cursor: pointer;
     margin-top: 2rem;
+  }
+
+  .button:hover {
+    transition: 0.2s ease-in-out;
+    background-color: rgb(255, 102, 0);
   }
 
 .column>h3{
@@ -147,18 +174,20 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 50px;
     line-height: 1.1;
-    color: red;
+    color: rgb(255, 102, 0);
     font-weight: 700;
     text-transform: uppercase;
-    text-align: right;
+    text-align: center;
 }
 
 .intro__subtitle {
     margin-bottom: 60px;
-    font-size: 22px;
+    font-size: 1.5rem;
     color: #fff;
     line-height: 1.5;
     font-weight: 400;
+    border-left: 3px solid rgb(255, 102, 0);
+    background-color: rgb(44, 44, 44);
 }
 
 
@@ -183,11 +212,12 @@ body {
 }
 
 .btn--red {
-    background-color: #e84545;
+    background-color: rgb(255, 102, 0);
 }
 
 .btn--red:hover { 
-    background-color: #dd3434;
+    background-color: rgb(255, 136, 56);
+    color: #000;
 }
 
 footer{
